@@ -1,0 +1,36 @@
+{
+  "name": "katosdev/reply2see",
+  "description": "Adds a reply to see BBCODE.",
+  "keywords": [
+    "flarum"
+  ],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "require": {
+    "flarum/core": "^1.0.0"
+  },
+  "authors": [
+    {
+      "name": "Katos",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "katosdev\\Reply2See\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "Reply2See",
+      "icon": {
+        "name": "2",
+        "backgroundColor": "#33ee33",
+        "color": "#ffffff"
+      }
+    },
+    "flagrow": {
+      "discuss": ""
+    }
+  }
+}
