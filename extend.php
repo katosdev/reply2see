@@ -29,9 +29,8 @@ return [
 	        );
    		 }),
     new Extend\Locales(__DIR__ . '/resources/locale'),
-	function (Dispatcher $events){
-	    $events->subscribe(Listeners\LoadSettingsFromDatabase::class);
-	}
-	
+
+	(new Extend\Event())
+	->subscribe(Listeners\LoadSettingsFromDatabase::class),
 
 ];
